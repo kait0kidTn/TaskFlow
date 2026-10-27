@@ -1,96 +1,92 @@
+# TaskFlow — Iteration Journal
 
+## Iteration 1: Initial Implementation
 
-\# TaskFlow — Iteration Journal
+**Goal:** Deliver a working task management application.
 
+**Work performed:**
 
+- Implemented the Flask API for task management.
+- Integrated the MySQL database.
+- Developed the frontend using HTML, CSS, and JavaScript.
+- Implemented task creation, listing, updating, filtering, and deletion.
+- Created eight automated API tests using pytest.
+- Configured GitHub Actions to run the automated tests.
 
-\## Iteration 1: Initial implementation
+**Observed evidence:**
 
+- The application was tested locally through the browser.
+- The automated test suite passed all eight tests.
+- The GitHub Actions workflow completed successfully, as observed by the team.
+- Git commits recorded the implementation and CI configuration.
 
+**Limitations:**
 
-\*\*Goal:\*\* Deliver a working task-management application.
+- The initial implementation was developed under a short deadline.
+- No controlled comparison against a conventional development process was performed.
+- No measured comparison of defect rates, feedback time, or developer confidence is available.
+- TDD and pair programming have not been established as completed practices by the evidence currently recorded.
 
+## Iteration 2: Technical Quality Improvement
 
+**Goal:** Strengthen feedback, maintainability, and confidence when modifying the application.
 
-\*\*Implemented:\*\*
+**Activities planned:**
 
-\- Flask API
+- Review the existing test suite and identify missing test cases.
+- Conduct a pair-programming session with driver and navigator roles, if possible.
+- Identify and refactor one real section of code without intentionally changing its behavior.
+- Run the automated test suite after any code changes.
+- Verify the GitHub Actions workflow.
+- Record any defects, feedback time, and technical debt identified.
 
-\- MySQL database integration
+**Results:**
+Iteration 2 activities and results must be completed after the planned work has been performed. The team will record the changes made, the tests executed, and the evidence collected.
 
-\- HTML/CSS/JavaScript frontend
+**Limitations:**
 
-\- Task creation, listing, updating and deletion
+- The effects of the planned activities have not yet been measured.
+- No improvement in development speed or defect reduction will be claimed without supporting evidence.
 
+## Retrospective
 
+**What went well?**
 
-\*\*Observed evidence:\*\*
+- The team developed a working task management application with a frontend, backend, and MySQL database.
+- Eight automated API tests were implemented.
+- A GitHub Actions workflow was configured to execute the tests automatically.
+- A technical Definition of Done was created to clarify quality expectations.
 
-\- Local automated tests: 8 passed
+**What was difficult?**
 
-\- GitHub Actions: successful run, as observed by the team
+- The short deadline limited the time available for experimentation and evaluation.
+- The current test suite does not cover every possible application behavior.
+- The project does not yet provide a controlled comparison of conventional development and XP practices.
 
-\- Repository commits record the implementation and CI setup
+**What did we learn?**
 
+- Automated tests provide repeatable feedback about the behaviors they cover.
+- Continuous integration helps verify changes consistently.
+- Passing tests do not guarantee that the entire application is free of defects.
+- Technical quality practices need to be applied and documented, not merely described in theory.
 
+**One improvement for the next iteration:**
+Review test coverage, add relevant tests, and perform a documented refactoring while checking that the existing tests continue to pass.
 
-\*\*Limitations:\*\*
+**Action items:**
 
-\- The initial implementation was developed under a short deadline.
+- **Action:** Review and improve the technical Definition of Done.
+- **Responsible member:** Majd mohamed
+- **Evidence:** Updated Definition of Done document.
 
-\- The available evidence does not establish a controlled comparison against a conventional development process.
+- **Action:** Review and improve automated test coverage.
+- **Responsible member:** lassade mrabet
+- **Evidence:** Updated tests and recorded test results.
 
-\- Pair programming and refactoring must only be recorded when actually performed.
+- **Action:** Conduct and document a pair-programming session.
+- **Responsible members:** Mohamed aziz cherif Oussama Rhim
+- **Evidence:** Session notes, roles, task performed, and observations.
 
+## Final Note
 
-
-\## Iteration 2: Quality improvement
-
-
-
-\*\*Goal:\*\* Strengthen feedback, maintainability and confidence in changes.
-
-
-
-\*\*Activities to record when performed:\*\*
-
-\- Review test coverage and add relevant tests.
-
-\- Pair program with rotating driver and navigator roles.
-
-\- Refactor one real area of code while preserving behavior.
-
-\- Run the test suite and GitHub Actions.
-
-\- Record defects, feedback time and any technical debt discovered.
-
-
-
-\*\*Results:\*\*
-
-\- Complete after the activities have been performed and evidence collected.
-
-
-
-\## Retrospective
-
-
-
-\*\*What went well:\*\*
-
-\- To be completed by the team.
-
-
-
-\*\*What was difficult:\*\*
-
-\- To be completed by the team.
-
-
-
-\*\*One improvement for the next iteration:\*\*
-
-\- To be agreed by the team.
-
-
-
+This journal distinguishes completed work from planned activities. Any additional XP practice or experiment will be recorded as completed only when the team has performed it and collected supporting evidence.
