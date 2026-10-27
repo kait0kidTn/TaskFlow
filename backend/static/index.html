@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow | Task Manager</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Task<span>Flow</span></div>
+      <div class="subtitle">Your work, organized.</div>
+    </header>
+
+    <main class="container">
+      <section class="welcome">
+        <div>
+          <p class="eyebrow">WORKSPACE</p>
+          <h1>Manage your tasks.</h1>
+          <p class="muted">
+            Plan your work. Track your progress. Stay focused.
+          </p>
+        </div>
+        <div class="date" id="today"></div>
+      </section>
+
+      <section class="stats">
+        <article class="stat-card">
+          <p>Total tasks</p>
+          <h2 id="total-count">0</h2>
+        </article>
+        <article class="stat-card">
+          <p>In progress</p>
+          <h2 id="progress-count">0</h2>
+        </article>
+        <article class="stat-card">
+          <p>Completed</p>
+          <h2 id="done-count">0</h2>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2 id="form-title">Create a task</h2>
+        <form id="task-form">
+          <input type="hidden" id="task-id" />
+
+          <label for="title">Task title *</label>
+          <input
+            id="title"
+            type="text"
+            maxlength="150"
+            placeholder="e.g. Finish the XP project"
+            required
+          />
+
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            rows="2"
+            placeholder="What needs to be done?"
+          ></textarea>
+
+          <div class="form-row">
+            <div>
+              <label for="priority">Priority</label>
+              <select id="priority">
+                <option>Low</option>
+                <option selected>Medium</option>
+                <option>High</option>
+              </select>
+            </div>
+            <div>
+              <label for="due-date">Due date</label>
+              <input id="due-date" type="date" />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="save-button">Add task</button>
+            <button type="button" id="cancel-button" class="secondary hidden">
+              Cancel edit
+            </button>
+          </div>
+        </form>
+        <p id="message" role="status"></p>
+      </section>
+
+      <section class="tasks-section">
+        <div class="tasks-heading">
+          <div>
+            <p class="eyebrow">YOUR WORK</p>
+            <h2>Task list</h2>
+          </div>
+          <select id="filter">
+            <option value="All">All tasks</option>
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Done">Done</option>
+          </select>
+        </div>
+        <div id="task-list" class="task-list">
+          <p class="muted">Loading tasks...</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
